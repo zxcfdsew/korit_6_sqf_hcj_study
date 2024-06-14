@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .out {
+            position: relative;
+            border: 1px solid black;
+            width: 500px;
+            height: 500px;
+        }
+
+        .in {
+            position: relative;
+            border: 1px solid black;
+            margin-left: 50px;
+            width: 100px;
+            height: 100px;
+        }
+
+        .out > .in:nth-of-type(2) {
+            background-color: red;
+        }
+
+        .out .in:nth-of-type(1) {
+            background-color: blue;
+        }
+
+        .out > .in:nth-of-type(1) {
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <div class="out">
+        <div class="in">
+            <div class="in"></div>
+        </div>
+        <div class="in"></div>
+        <div class="in"></div>
+    </div>
+    <div class="out">
+        <div class="in"></div>
+        <div class="in"></div>
+        <div class="in"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .base-box {
+            display: flex;
+            border: 1px solid black;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 1000px;
+        }
+        
+        .big-box {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            border: 1px solid black;
+            padding: 20px;
+            width: 700px;
+            height: 900px;
+            padding: 20px;
+        }
+
+        .middle-box {
+            border: 1px solid black;
+            width: 100%;
+            height: 40%;
+        }
+
+        .small-box {
+            border: 1px solid black;
+            width: 100px;
+            height: 100px;
+        }
+
+        .margin-right20 {
+            margin-right: 20px;
+        }
+
+        .margin-right150 {
+            margin-right: 150px;
+        }
+
+        .margin-right400 {
+            margin-right: 400px;
+        }
+
+        .first {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .first-in {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .second {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .three {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+        }
+
+        .three-in {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .four {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="base-box">
+        <div class="big-box margin-right20">
+            <div class="middle-box first">
+                <div class="first-in">
+                    <div class="small-box"></div>
+                    <div class="small-box"></div>
+                </div>
+                <div class="first-in">
+                    <div class="small-box"></div>
+                    <div class="small-box"></div>
+                </div>
+            </div>
+            <div class="middle-box second">
+                <div class="small-box"></div>
+            </div>
+        </div>
+        <div class="big-box">
+            <div class="middle-box three">
+                <div class="three-in">
+                    <div class="small-box"></div>
+                    <div class="small-box"></div>
+                    <div class="small-box"></div>
+                </div>
+                <div class="three-in">
+                    <div class="small-box"></div>
+                    <div class="small-box"></div>
+                    <div class="small-box"></div>
+                </div>
+            </div>
+            <div class="middle-box four">
+                <div class="small-box"></div>
+                <div class="small-box"></div>
+                <div class="small-box"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

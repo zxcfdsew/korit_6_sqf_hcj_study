@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            border: 1px solid black;
+        }
+
+        .box {
+            background-color: green;
+        }
+
+        .box2 {
+            background-color: purple;
+        }
+
+        #box1 {
+            background-color: blue;
+        }
+
+        #box3 {
+            background-color: red;
+
+        }
+
+        h1, .text-box {
+            width: 100px;
+            height: 100px;
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <!-- css 우선순위 : tag -> class -> id -> 인라인 스타일 -> !important-->
+    <!-- !important는 사용 X, 잘 짜면 쓸 일이 없음 -->
+    <div class="box" id="box1"></div> 
+    <div class="box box2"></div>
+    <div id="box3"></div>
+
+    <!-- 클래스는 하이픈(-)을 사용해서 단어를 구분 -->
+    <p class="text-box"></p>
+    <h1></h1>
+</body>
+</html>

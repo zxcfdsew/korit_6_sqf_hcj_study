@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            position: relative;
+        }
+
+        table {
+            position: absolute;
+            width: 500px;
+            height: 500px;
+            border-collapse: collapse;
+        }
+
+        td {
+            width: 50px;
+            height: 50px;
+            border: 1px solid black;
+        }
+
+        .black {
+            background-color: black;
+        }
+
+        .circle {
+            box-sizing: border-box;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            border: 1px solid black;
+        }
+
+        .stone1 {
+            position: absolute;
+            left: 100px;
+            top: 100px;
+            background-color: black;
+        }
+        
+        .stone2 {
+            position: absolute;
+            left: 300px;
+            top: 100px;
+            background-color: black;
+        }
+
+        .stone3 {
+            position: absolute;
+            top: 400px;
+            background-color: yellow;
+        }
+
+        .stone4 {
+            position: absolute;
+            top: 400px;
+            left: 200px;
+            background-color: yellow;
+        }
+
+        .stone5 {
+            position: absolute;
+            top: 400px;
+            left: 400px;
+            background-color: yellow;
+        }
+        
+    </style>
+</head>
+<body>
+    <div>
+        <table>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+        <div class="stone1 circle"></div>
+        <div class="stone2 circle"></div>
+        <div class="stone3 circle"></div>
+        <div class="stone4 circle"></div>
+        <div class="stone5 circle"></div>
+    </div>
+</body>
+</html>

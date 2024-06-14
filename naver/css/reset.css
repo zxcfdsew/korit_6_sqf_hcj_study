@@ -1,0 +1,25 @@
+html, body {
+    height: 100%;
+}
+
+body, h1, ul, ol, button {
+    margin: 0px;
+    padding: 0px;
+}
+
+.inner {
+    box-sizing: border-box;
+    margin: 0px auto;
+    width: 500px;
+    height: 100%;
+    background-color: #fafafa;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+button {
+    cursor: pointer;
+}
