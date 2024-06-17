@@ -26,7 +26,7 @@ function renderTable() {
     userTableBody.innerHTML = userList.map(({id, username, name, password}, index) => {
         return `
             <tr>
-                <th><input type="checkbox" onchange="handleUserCheck(event)"></th>
+                <th><input type="checkbox" onchange="handleUserCheck(event)" value=${id}></th>
                 <td>${index + 1}</td>
                 <td>${id}</td>
                 <td>${name}</td>
@@ -89,5 +89,23 @@ function getNewId() {
 }
 
 function handleUserCheck(e) {
-    console.log(e.target.checked);
+    const checkboxs = document.querySelectorAll("input[type='checkbox']");
+    let user = "";
+    for (let i = 0; i < checkboxs.length; i++) {
+        if (e.target !== checkboxs[i]) {
+           checkboxs[i].checked = false;
+        } else {
+            user = userList.filter(({id}) => parseInt(checkboxs[i].value) === id)[0];
+        }
+    }
+
+    const nameInput = document.querySelector(".name-input");
+    const usernameInput = document.querySelector(".username-input");
+    const passwordInput = document.querySelector(".password-input");
+
+    nameInput.value = user.name;
+    usernameInput.value = user.name;
+    passwordInput.value = user.password;
+
+    console.log(user);
 }
